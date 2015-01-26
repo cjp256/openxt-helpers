@@ -3,6 +3,7 @@
 set -e
 
 SOURCES_DIR="${HOME}/openxt/sources/$1"
+
 mkdir -p "${SOURCES_DIR}"
 
 for x in $(cat repo.list); do

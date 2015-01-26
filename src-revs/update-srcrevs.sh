@@ -25,14 +25,16 @@ do
     # force git mode for speed
     url=$(echo $url | sed 's/https/git/g')
 
-    echo "filename=$filename repo=$repo url=$url srcrev_name=$srcrev_name"
+    #echo "filename=$filename repo=$repo url=$url srcrev_name=$srcrev_name"
 
     if [[ -n $BRANCH_NAME ]]; then
         ls_remote=$(git ls-remote $url $BRANCH_NAME)
-        echo "ls-remote = $ls_remote"
+        #echo "ls-remote = $ls_remote"
         srcrev=$(echo $ls_remote | cut -f 1 -d " ")
 
-        echo "filename=$filename repo=$repo url=$url srcrev_name=$srcrev_name srcrev=$srcrev"
+        echo "repo=$repo url=$url srcrev_name=$srcrev_name srcrev=$srcrev"
+
+        continue
 
         # update with latest srcrev
         sed -i "s/${srcrev_name}.*/${srcrev_name} = \"$srcrev\"/g" $filename
