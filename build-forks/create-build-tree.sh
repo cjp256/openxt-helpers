@@ -9,7 +9,7 @@ if [[ -e ${BUILD_DIR} ]]; then
 	exit 1
 fi
 
-git clone https://github.com/OpenXT/openxt.git "${BUILD_DIR}"
+git clone ${SOURCES_DIR}/openxt.git "${BUILD_DIR}"
 
 cp config "${BUILD_DIR}/.config"
 

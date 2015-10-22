@@ -35,6 +35,7 @@ toolstack
 toolstack-data
 uid
 v4v
+vusb-daemon
 win-tools
 xblanker
 xclibs
