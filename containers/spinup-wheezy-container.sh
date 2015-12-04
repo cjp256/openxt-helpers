@@ -21,7 +21,7 @@ lxc launch images:debian/wheezy/i386 ${CONTAINER_NAME}
 lxc exec ${CONTAINER_NAME} -- adduser --disabled-password --system --shell /bin/bash --gecos oebuilder --group builder
 
 # give it time for networking to come up
-sleep 5
+sleep 10
 
 # install sudo so we can execute with non-root
 lxc exec ${CONTAINER_NAME} -- apt-get update
