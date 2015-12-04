@@ -41,6 +41,8 @@ usage:
 
 > build/build-jethro.sh [optional-build-tree-name-defaults-to-jethro]
 
+## containers - lxc/lxd container scripts
+
 ### containers/prep-ubuntu-15.10.sh
 
 installs lxd in ubuntu 15.10, enabling the spinup-*-container scripts.
