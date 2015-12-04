@@ -19,7 +19,8 @@ if [ "$(readlink /bin/sh)" != "bash" ]; then
 fi
 
 sudo apt-get -y install guilt iasl quilt bin86 bcc libncurses5-dev libsdl1.2-dev liburi-perl genisoimage policycoreutils binutils gcc make unzip
-sudo apt-get -y install g++ texi2html subversion gawk chrpath texinfo automake
+sudo apt-get -y install g++ texi2html subversion gawk chrpath texinfo automake cpio
+sudo apt-get -y install vim wget
 
 wget http://ftp.us.debian.org/debian/pool/main/g/gmp/libgmpxx4ldbl_4.3.2+dfsg-1_i386.deb
 wget http://ftp.us.debian.org/debian/pool/main/g/gmp/libgmp3c2_4.3.2+dfsg-1_i386.deb
