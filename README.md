@@ -31,16 +31,6 @@ usage:
 
 > cd build-forks; create-build-tree.sh <tree-name>
 
-## build - scripits to do standalone builds using openxt's github repos
-
-### build/build-jethro.sh
-
-script for creating and building a jethro-based OpenXT using Adam Oliver's (aikidokatech) branch. Note that this does not use a build-fork.  creates build tree in ~/openxt/builds/<build-tree-name>
-
-usage:
-
-> build/build-jethro.sh [optional-build-tree-name-defaults-to-jethro]
-
 ## containers - lxc/lxd container scripts
 
 ### containers/prep-ubuntu-15.10.sh
@@ -59,7 +49,7 @@ usage:
 
 > containers/spinup-wheezy-container.sh <container-name>
 
-### containers/kickoff-jethro.sh
+### containers/kickoff-master-build.sh
 
 kicks off fresh jethro build within a container created with spinup-*-container
 
